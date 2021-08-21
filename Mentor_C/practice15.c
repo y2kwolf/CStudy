@@ -83,23 +83,23 @@ int main(void)
 
 
 // 4번 문제
-int cmtom(int a)
+float cmtom(int height)
 {
 	float meter;
-	meter = (float)a / 100;
+	meter = height / 100.0;
+	printf("결과: %.2f m\n", meter);
+	}
 
-	return meter;
-}
 int main(void)
 {
-	int a;
-	float result;
+	int height;
 
 	printf("키를 cm 단위로 입력하세요: ");
-	scanf("%d", &a);
+	scanf("%d", &height);
 
-	result = cmtom(a);
-	printf("결과: %.2f m\n", result);
+	cmtom(height);
+
+	return 0;
 }
 
 
