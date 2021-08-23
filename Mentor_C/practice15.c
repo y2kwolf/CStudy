@@ -81,14 +81,14 @@ int main(void)
 }
 */
 
-
+/*
 // 4번 문제
-float cmtom(int height)
+void convertCmToM(int height)
 {
 	float meter;
 	meter = height / 100.0;
 	printf("결과: %.2f m\n", meter);
-	}
+}
 
 int main(void)
 {
@@ -97,17 +97,34 @@ int main(void)
 	printf("키를 cm 단위로 입력하세요: ");
 	scanf("%d", &height);
 
-	cmtom(height);
+	convertCmToM(height);
 
 	return 0;
 }
+*/
 
 
-//int main(void)
-//{
-//	float num;
-//	num = (float)181 / 100;
-//	printf("%.2f\n", num);
-//
-//	return 0;
-//}
+// 5번 문제
+
+void convertSecToTime(int sec)
+{
+	int hours, minutes, seconds;
+
+	seconds = sec % 60;
+	minutes = (sec / 60) % 60;
+	hours = sec / 3600;
+
+	printf("결과: %d시간 %d분 %d초\n", hours, minutes, seconds);
+}
+
+int main(void)
+{
+	int second;
+
+	printf("초를 입력하세요: ");
+	scanf("%d", &second);
+
+	convertSecToTime(second);
+
+	return 0;
+}
