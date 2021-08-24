@@ -2,9 +2,9 @@
 파일명: section02.c
 작성자: 진상영
 작성일: 2021-06-17
-내용: 변수와 자료형
+내용: 변수(Variables)와 자료형(Primitive Data Types)
 1) 변수
-2) printf() 함수 변수 출력
+2) printf() 함수: 변수 출력
 3) 자료형: 정수(문자)- char / 정수- short, int, long, long long / 실수- float, double, long double
 4) 상수: 리터럴 / 심볼릭 / 매크로 상수
 5) 자료형변환: 자동형변환 / 명시적형변환
@@ -15,6 +15,7 @@
 
 int main(void)
 {
+	/*
 	// 문자열 출력
 	printf("Hello C!\n"); // Hello C!를 출력합니다.
 	printf("\n");
@@ -60,6 +61,9 @@ int main(void)
 	printf("오늘의 주제: 변수와 자료형\n");
 	printf("프로그램 작성자: 홍길동\n");
 	printf("프로그램 작성일: 2021.02.23\n");
+	*/
+
+
 
 	return 0;
 }
